@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paul's Personal JavaScript Application</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+   <div class="weathercard">
+       <div>
+            <form class="search" id="weatherForm">
+                <input type="text" placeholder="Your Favorite City" class="search-bar">
+                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+            </form>
+       </div>
+    
+       <div class="weather loading" >
+            <div class="info">
+                <h2 id="city">Weather in Sydney</h2>
+                <br>
+                <div id="time">Sunday, November 14, 2021 13:28:57</div>
+                <br>
+
+                <div class="weatherbox">
+                    <div id="weather" >
+                    <div id="temp">25°C</div>
+                    <br>
+                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="icon"/>
+                    <br>
+                    <div id="description">Few clouds - fresh breeze</div>
+                    <br>
+                    <div id="humidity">Humidity:60%</div>
+                    <br>
+                </div>
+            
+                <img src="https://source.unsplash.com/1600x900/?sydney" alt="" class="image" id="cityImage"/>
+
+            </div>
+                
+
+        </div>
+   </div>        
+    <hr>
+    <div class=savedcity>
+        <h2> Saved City</h2>
+        <button type="submit" class="save-time" id="savedWeatherTime"><i class="fa fa-download"></i></button>
+        <div id="savedcity"></div>
+    </div>
+    <hr>
+    <div class="taskcard">
+        <h2 id="city">To-Do-List</h2>
+        <br>
+        <div id=taskfield>
+            <form id="taskForm" action="#" method="post">
+                <input type="text" id="task-bar" name="new-task-description" placeholder="Put Your Task Here" >
+                <br>
+                <input type="submit" class="task-button" value="Add Task" >
+            </form>
+                  
+            <div id="list">
+                <ul id="tasks">
+                </ul>
+                
+            </div> 
+        </div>
+    </div>
+    <hr>   
+    <div class="minigame">
+        <h2>Mini Game</h2>
+        <br>
+        <h4>Our Numbers: 1,2,3,4,5,6,7,8,9,10,11,12,26,28,30,32,24,26,40,28,29,50</h4>
+        <br>
+        <form id="gameForm" action="#" method="post">
+            <input type="text" id="game-bar" name="game" placeholder="Put Your Number" >
+        </form>
+        <br>
+        <button id="plussButton">Plus Your Number</button>
+        <button id="minusButton">Minus Your Number</button>
+
+        <br>
+        <br>
+        <h4>The Result</h4>
+        <br>
+        <h4><span></span></h4>
+
+
+    </div> 
+
+</body>
+</html>
